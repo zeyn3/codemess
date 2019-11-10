@@ -1,0 +1,34 @@
+
+# tech_notes series  
+
+##############
+##  VSCODE  ##
+##############
+
+Settings:
+    # Font Size: 20
+    # Wordrap: on
+    # Terminal Integrated Fontsize: 20
+    # Terminal Shell for Windows: "C:\\Program Files\\Git\\bin\\bash.exe"
+
+
+
+Key Shortcuts
+    # F1 - Command Pallette
+    #  
+
+
+VSCode Packages required:
+    # Remote - WSL extension
+    # 
+
+
+Integrated Terminal
+    # View > Integrated Terminal (Ctrl + `)
+    # Press "+" and add a new bash shell
+        # you can add multiple bash shells
+        # you can delete shells using "bucket" icon
+     
+
+
+

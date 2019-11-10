@@ -1,0 +1,46 @@
+#############################
+## strep node deactivator  ##
+#############################
+
+Description:
+    # strep
+        # system status reporting tool
+        # collects useful system status data from various nodes in the network
+    # strep node deactivator (the script) will help:
+        # deactivting the nodes that is no longer required to report
+
+Architecture:
+    # strep has 2 servers and hence:
+        # config are on 2 servers
+        # SYD-STREP-01 (master)
+            > collects and holds all data
+        # SYD-STREP-02 (slave)
+            > collects and passes data to master
+    
+    # diagram:
+
+        SYD-STREP-01                    SYD-STREP-02
+        (master)                        (slave)
+        10.1.1.1 -------- Switch ------- 10.1.1.2
+                            |
+                ____________|___________________
+                    10.1.1.11 - 10.1.1.99              
+
+The Script:
+    # is purposed to diactivate nodes in strep tool
+
+    # to deactivate:
+        1. Adds "deactivated dd/mm/yyyy" to the end of the node-related line(s) in strep-master/devices.txt
+        2. Comments out node object in slave server in strep-slave/nodes by prefixing "#" to each line related to the given object
+          
+
+
+
+    
+
+
+
+
+
+
+

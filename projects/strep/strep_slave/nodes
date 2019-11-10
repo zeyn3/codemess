@@ -1,0 +1,16 @@
+# Node Objects
+#
+set node {
+    name: SYD-RTR-EDGE-INT-01,
+    ip_addr: 10.2.25.1, 
+    port: 12321,
+}
+
+set node {
+    name: XXXX,
+    ip_addr: 10.2.X.X, 
+    port: 12321,
+}
+
+
+
