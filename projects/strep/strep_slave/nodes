@@ -7,13 +7,48 @@ set node {
 }
 
 
-# Khazar - please complete the following nodes as per devices list
 
 set node {
-    name: XXXX,
-    ip_addr: 10.2.X.X, 
+    name: SYD-RTR-EDGE-INT-02,
+    ip_addr: 10.2.25.2, 
     port: 12321,
 }
 
 
 
+set node {
+    name: SYD-RTR-EDGE-INT-03,
+    ip_addr: 10.2.25.3,
+    port: 12321,
+}
+
+
+
+set node {
+    name: SYD-RTR-EDGE-INT-04,
+    ip_addr: 10.2.25.4,
+    port: 12321,
+}
+
+
+
+set node {
+    name: SYD-RTR-EDGE-B2B-01,
+    ip_addr: 10.2.27.17,
+    port: 12321,
+}
+
+
+
+set node {
+    name: SYD-RTR-EDGE-B2B-02,
+    ip_addr: 10.2.27.18,
+    port: 12321,
+}
+
+
+
+set node {
+    name: SYD-RTR-EDGE-B2B-03,
+    ip_addr: 10.2.27.19,
+    port: 12321
