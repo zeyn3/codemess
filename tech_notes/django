@@ -1,0 +1,5 @@
+Setup local_settings
+1. Copy sample_local_settings.py file to '<project>/' folder
+2. Rename sample_local_settings.py in '<project>/' folder to local_settings.py
+3. Ensure local_settings.py is in your .gitignore list
+4. Edit DB settings in your new '<project>/' local_settings.py file accordingly

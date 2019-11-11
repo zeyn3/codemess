@@ -1,0 +1,4 @@
+# add useful nix commands
+ip addr show
+ls -al
+mkdir folder_name
