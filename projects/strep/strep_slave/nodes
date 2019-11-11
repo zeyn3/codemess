@@ -6,6 +6,9 @@ set node {
     port: 12321,
 }
 
+
+# Khazar - please complete the following nodes as per devices list
+
 set node {
     name: XXXX,
     ip_addr: 10.2.X.X, 
