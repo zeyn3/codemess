@@ -1,0 +1,9 @@
+# postgres tech notes
+
+# psql notes
+psql -U postgres
+\l  #
+\c <db_name> #connect to another DB
+
+CREATE USER db_admin;
+\password db_admin

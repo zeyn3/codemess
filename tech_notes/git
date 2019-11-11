@@ -1,0 +1,25 @@
+
+# simple git pull/push process
+git pull origin <branch>
+  # make you changes (working tree)
+git status
+git diff
+git diff --cached
+git add . (Staging Area)
+git commit -m "Your message here" (Commit)
+!
+git pull origin <branch> (fetch + merge)
+git status
+  All uptodate
+git push origin <branch>
+
+---------------------------------------
+
+# create a branch that tracked remotely
+git checkout <branch_to_copy>  //ideally it is branch "dev"
+git branch <branch_name>
+git branch -a
+git checkout <branch_name>
+git status
+git remote -v
+git push -u origin <branch_name>
