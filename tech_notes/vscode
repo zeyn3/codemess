@@ -10,6 +10,7 @@ Settings:
     # Wordrap: on
     # Terminal Integrated Fontsize: 20
     # Terminal Shell for Windows: "C:\\Program Files\\Git\\bin\\bash.exe"
+    # Color Theme: High Contrast
 
 
 
@@ -28,7 +29,42 @@ Integrated Terminal
     # Press "+" and add a new bash shell
         # you can add multiple bash shells
         # you can delete shells using "bucket" icon
-     
+
+Features:
+    # Dig function further:
+        # Right-click > Go Definition
+        # Right-click > Peek Definition
+    # To edit an item's occurances:
+        # Right-click > Change all occurances
+    # Copy/cut/move:
+        # Shift+Alt+Up/Down
+        # Ctrl+X/C/V with no highlighting
+    
+
+Extensions:
+    # Bracket Pair Colorizer
+    # Live Server Ritwick Dey 
+    # vscode-icons
+    # vscode-faker
+    # Javascript ES6 Code Snippets
+    # Vue2 Snippets
+    # Python 4M
+
+Version Control:
+    # click git repo icon to intialize
+    # U - unstaged/untracked
+    # RightClick > Stage/Unstage
+    # Three dots next to the repo ...
+    
+
+
+
+
+    
+
+
+    
+
 
 
 
