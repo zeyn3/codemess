@@ -1,8 +1,8 @@
 # Node Objects
-#
+
 set node {
     name: SYD-RTR-EDGE-INT-01,
-    ip_addr: 10.2.25.1, 
+    ip_addr: 10.2.25.1,
     port: 12321,
 }
 
@@ -10,7 +10,7 @@ set node {
 
 set node {
     name: SYD-RTR-EDGE-INT-02,
-    ip_addr: 10.2.25.2, 
+    ip_addr: 10.2.25.2,
     port: 12321,
 }
 
@@ -52,3 +52,4 @@ set node {
     name: SYD-RTR-EDGE-B2B-03,
     ip_addr: 10.2.27.19,
     port: 12321
+}
