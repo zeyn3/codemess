@@ -69,6 +69,26 @@ Debugger:
             "justMyCode": false
     6. Add Watchers as you need
         # better than print statements :))
+    7. Also check out "debug console"
+
+Testing:
+    1. Open test_*.py files
+    2. Go to F1 > Python: Discover Tests
+    3. Enable and Config Test Framework
+    4. Select framework > unittest
+    5. The location of the test files: Root folder?
+    6. Test Files Naming Pattern: test_*.py
+    7. Notice Run|Debug Tests links
+    8. Check:
+        > the bottom test bar
+        > OUTPUT pane (Terminal)
+        > Tests pane (Lab icon)
+    9. Make sure the test files are under PATH??
+
+       
+
+
+
 
     
 
