@@ -25,38 +25,39 @@ with open("../strep_master/devices.txt","r") as devices:
 
 with open("../strep_master/devices.txt","w") as devices:
     devices.writelines(store)
-#
-#The second stage begin here
-#
 
-store2 = []
-node_s = []
-index = int()
+#############################STAGE_2###########################
 
-def edit(arg,arg2):
-    for i,v in enumerate(store2):
-        if arg in v:
-            index = i
-            index -= 1
-            arg2 = index
-            for i in store2[index:]:
-                i = "#" + i
-                node_s.append(i)
-                if "}" in i:
-                    break
-        else:
-            node_s.append(v)
-    node_s.pop(arg2)
-    arg2 += 5
-    node_s.pop(arg2)
-    node_s.pop(arg2)
-    node_s.pop(arg2)
+new_data = []
+item_line_pos, block_start_pos, block_end_pos = [0,0,0]
+def deactive():
+    with open("../strep_slave/nodes","r") as nodes_file:
+        for line in nodes_file:
+            new_data.append(line)
 
-with open("../strep_slave/nodes","r") as nodes:
-    for node in nodes:
-        store2.append(node)
+        item_line_pos, block_start_pos, block_end_pos = [0, 0, 0]
 
-edit(receive,index)
+        for i, line in enumerate(new_data):
+            if receive in line:
+                item_line_pos=i
+                for z in range(1, 10):
+                    if "set node {" in new_data[item_line_pos - z]:
+                        block_start_pos = item_line_pos - z
+                    if block_start_pos > 0:
+                        break
+                for z in range(1, 10):
+                    if "}" in new_data[item_line_pos + z]:
+                        block_end_pos = item_line_pos + z
+                    if block_end_pos > 0:
+                        break
+            if block_start_pos > 0 and block_end_pos > 0:
+                break
 
-with open("../strep_slave/nodes","w") as nodes:
-    nodes.writelines(node_s)
+        print(block_start_pos, block_end_pos, item_line_pos)
+        for each in range(block_start_pos, block_end_pos+1):
+            new_data[each] = f"#{new_data[each]}"
+
+    with open("../strep_slave/nodes","w") as nodes_file:
+        nodes_file.writelines(new_data)
+
+deactive()

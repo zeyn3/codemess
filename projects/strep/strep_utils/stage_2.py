@@ -43,9 +43,9 @@
 device_name = input("server: ")
 new_data = []
 
-with open("../strep_slave/nodes","r") as nodes_file:    
+with open("../strep_slave/nodes","r") as nodes_file:
     for line in nodes_file:
-        new_data.append(line)                 
+        new_data.append(line)
 
     item_line_pos, block_start_pos, block_end_pos = [0, 0, 0]
 
@@ -77,6 +77,3 @@ with open("../strep_slave/nodes","r") as nodes_file:
 
 with open("../strep_slave/nodes","w") as nodes_file:    
     nodes_file.writelines(new_data)
-
-          
-            
