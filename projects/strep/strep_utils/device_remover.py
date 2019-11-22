@@ -53,7 +53,6 @@ def deactive():
             if block_start_pos > 0 and block_end_pos > 0:
                 break
 
-        print(block_start_pos, block_end_pos, item_line_pos)
         for each in range(block_start_pos, block_end_pos+1):
             new_data[each] = f"#{new_data[each]}"
 
