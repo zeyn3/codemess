@@ -27,24 +27,43 @@ Architecture:
                     10.1.1.11 - 10.1.1.99              
 
 The Script:
-    # is purposed to diactivate nodes in strep tool
-
+    # is purposed to diactivate nodes in strep too
+    # the script filename: device_remover.py
+    # user interface:
+        1. CLI
+            a. Call with parameters
+                device_remover.py [<device_name>|<full_path_to_device_list>.csv]
+            
+            b. Call without parameter (will prompt further for <device_name>|<full_path_to_device_list>.csv))
+                device_remover.py
+                    Enter device name or the full path for devices list: 
+            
+        2. GUI (django/flask) can call device_remover.py
+    
     # to deactivate:
         1. Adds "deactivated dd/mm/yyyy" to the end of the node-related line(s) in strep-master/devices.txt
         2. Comments out node object in nodes file under strep_slave folder by prefixing "#" to each line related to the given object
         3. Replace nodes file at SYD-STREP-02:/Desktop/strep/slave with the new version of nodes file created at step 2 (scp command might help)
-
-
-
-          
-
-
-
+        4. Replace devices.txt file at SYD-STREP-01:/Desktop/strep/master with the new version of devices.txt file created at step 1 (cp command might help)
     
+    # the  full process of device_remover deactivation to be scripted:
+        1. Pull the branch prod from the origin into your local dev server
+        2. Create a branch with <device_name>
+            # in case of multiple devices via csv file, use the first device_name as a branch name
 
+            NOTE: this branch <device_name> is LOCAL only and NOT pushed to the repo.
+       
+        3. Compare and sync with live config:
+            a. compare and sync SYD-STREP-01:/Desktop/strep/master/devices.txt
+            b. compare and sync SYD-STREP-02:/Desktop/strep/slave/nodes
 
-
-
-
-
-
+        4. Adds "deactivated dd/mm/yyyy" to the end of the node-related line(s) in strep-master/devices.txt
+        5. Comments out node object in nodes file under strep_slave folder by prefixing "#" to each line related to the given object
+        6. Merge branch <device_name>  to branch prod
+        7. Push prod branch to the repo at: SYD-STREP-01:/Desktop/src
+        8. Replace nodes file at SYD-STREP-02:/Desktop/strep/slave with the new version of nodes file created at step 2 (scp command might help)
+        9. Replace devices.txt file at SYD-STREP-01:/Desktop/strep/master with the new version of devices.txt file created at step 1 (cp command might help)
+        10. Restart network services: 
+            /etc/services/network restart
+        11. If no issues/errors, push prod branch from local dev server to the origin repo.
+        12. Return final SUCCESS/FAIL message 
