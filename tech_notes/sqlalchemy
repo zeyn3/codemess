@@ -1,0 +1,16 @@
+# sqlalchemy tech notes
+
+Step-by-step:
+--------------
+	#Initial setup
+	1. Create and activate venv:
+        $ virtual venv_alchemy
+        $ source venv_alchemy/Scripts/activate
+	2. Install/verify sqlalchemy:
+        $ pip install sqlalchemy
+	    $ pip freeze
+    
+    #src code details    
+	#app config
+	1. create app.py under alchemy: touch app.py 
+	2. See the further details in app.py

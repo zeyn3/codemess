@@ -1,0 +1,21 @@
+# sqlite tech notes
+
+# installing sqlite3 tools
+    1. mkdir c:\sqlite
+    2. Add c:\sqlite to PATH
+    3. Download sqlite-tools-win32-x86-3300100.zip from sqlite.org
+    4. Extract sqlite-tools-win32-x86-3300100.zip
+    5. Copy sqlite-tools-win32-x86-3300100\sqlite3.exe to c:\sqlite
+    6. Delete  sqlite-tools-win32-x86-3300100.zip AND
+        sqlite-tools-win32-x86-3300100
+    7. cli/bash: sqlite3 then ENTER
+
+# Interacting with the DB
+    1. sqlite3 <db_name>.db
+    2. Commands from sqlite3 CLI:
+        > .tables
+        > .schema
+        > .schema alchemy
+        > INSERT INTO alchemy VALUES (3, "Lessor", "Jose");
+        > SELECT * FROM Alchemy;
+        > .quit
