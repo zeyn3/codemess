@@ -105,4 +105,4 @@ venv_*/
 .mypy_cache/
 
 #test python file
-/home/khazar/github/codemess/projects/strep/strep_utils/test.py
+test.py
