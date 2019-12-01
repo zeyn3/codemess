@@ -1,4 +1,3 @@
-#this is test line
 # Current Reporting Devices List
 10.2.25.1 SYD-RTR-EDGE-INT-01 #
 10.2.25.2 SYD-RTR-EDGE-INT-02 #
