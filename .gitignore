@@ -104,5 +104,3 @@ venv_*/
 # mypy
 .mypy_cache/
 
-#test python file
-test.py
