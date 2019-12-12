@@ -2,5 +2,5 @@
 10.1.1.1 SYD-RTR-EDGE-INT-01 #deactivated dd/mm/yyyy
 10.1.1.11 SYD-RTR-EDGE-INT-02 #deactivated dd/mm/yyyy
 10.1.1.112 SYD-RTR-EDGE-INT-04 #deactivated dd/mm/yyyy
-10.1.1.113 SYD-RTR-EDGE-B2B-01 #
+10.1.1.113 SYD-RTR-EDGE-B2B-01 #deactivated 12/12/19
 10.1.1.114 SYD-RTR-EDGE-B2B-02 #deactivated dd/mm/yyyy

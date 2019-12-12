@@ -23,11 +23,11 @@
 
 
 
-set node {
-    name: SYD-RTR-EDGE-B2B-01,
-    ip_addr: 10.1.1.113,
-    port: 12321,
-}
+#set node {
+#    name: SYD-RTR-EDGE-B2B-01,
+#    ip_addr: 10.1.1.113,
+#    port: 12321,
+#}
 
 set node {
     name: SYD-RTR-EDGE-B2B-02,
