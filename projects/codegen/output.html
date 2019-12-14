@@ -1,0 +1,31 @@
+<dt>Employer Rating
+</dt>
+<dd>
+   <input class="radio radio--rhs" type="radio" name="employer_rating
+" value='Yes' {% if product.employer_rating
+ %} checked {% endif %}>
+   <label>Yes</label>
+   <input class="radio radio--rhs" type="radio" name="employer_rating
+" value='No' {% if product.employer_rating
+ == False %} checked {% endif %}>
+   <label>No</label>
+</dd>
+<dt>Ghost Of Product
+</dt>
+<dd>
+   <input class="radio radio--rhs" type="radio" name="ghost_of_product
+" value='Yes' {% if product.ghost_of_product
+ %} checked {% endif %}>
+   <label>Yes</label>
+   <input class="radio radio--rhs" type="radio" name="ghost_of_product
+" value='No' {% if product.ghost_of_product
+ == False %} checked {% endif %}>
+   <label>No</label>
+</dd>
+<dt>Product Title</dt>
+<dd>
+   <input class="radio radio--rhs" type="radio" name="product_title" value='Yes' {% if product.product_title %} checked {% endif %}>
+   <label>Yes</label>
+   <input class="radio radio--rhs" type="radio" name="product_title" value='No' {% if product.product_title == False %} checked {% endif %}>
+   <label>No</label>
+</dd>
