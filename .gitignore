@@ -104,3 +104,9 @@ venv_*/
 # mypy
 .mypy_cache/
 
+# strep
+
+# codegen
+projects/codegen/field_names
+
+

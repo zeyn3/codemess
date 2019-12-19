@@ -10,18 +10,24 @@ def get_title_name(field_name):
 
 with open("options", "r") as options:
 	field_names = options.readlines()
+# print(field_names)	
 
-with open("sample.html" , "r") as sample:
+with open("sample_textarea.html" , "r") as sample:
 	sample_content = sample.readlines()
+# print(f"Sample content original:")
+# for each in sample_content:
+# 	print(each) 
 
 store_for_writeliness = list()
 
 for field_name in field_names:
 	title_name = get_title_name(field_name)
 	for line in sample_content:
-		line = line.replace("Title",title_name)
-		line = line.replace("field_name",field_name)
+		line = line.replace("Title",title_name.strip())
+		line = line.replace("field_name",field_name.strip())
 		store_for_writeliness.append(line)
+# for each in store_for_writeliness:
+# 	print(each) 
 
-with open("output.html", "r") as write_to_sample:
+with open("output.html", "w") as write_to_sample:
 	write_to_sample.writelines(store_for_writeliness)
