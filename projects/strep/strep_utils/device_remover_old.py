@@ -1,9 +1,13 @@
 from datetime import datetime
 import os
 
-repo_path =  "/home/khazar/github/codemess/projects/strep/"
-master_path = "/home/khazar/Desktop/STREP/master/"
-slave_ssh_address_and_path = "khazar@192.168.100.16:/home/khazar/STREP/slave/"
+username = None
+slave_ip_address = None
+
+
+repo_path =  "/home/{username}/github/codemess/projects/strep/"
+master_path = "/home/{username}/Desktop/STREP/master/"
+slave_ssh_address_and_path = "{username}@{slave_ip_address}:/home/{username}/STREP/slave/"
 now = datetime.now()
 time = now.strftime("%D")
 receive_device_name = input("Please enter the name of device to be removed: ")
