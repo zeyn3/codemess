@@ -54,6 +54,8 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
+dev_settings.py
+prd_settings.py
 db.sqlite3
 
 # Flask stuff:
@@ -109,4 +111,6 @@ venv_*/
 # codegen
 projects/codegen/field_names
 
-
+# deployment
+gunicorn.service
+*.gunicorn.*
