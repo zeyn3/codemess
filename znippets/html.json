@@ -1,0 +1,51 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"znpDjTempContact": {
+		"prefix": "znpDjTempContact",
+		"body": [
+			"<div class=\"contact-form-wrapper\">",
+			"\t<form class=\"contact-form\" action=\"\">",
+			"{% csrf_token %}",
+			"\t\t<label for=\"first_name\">First Name</label>",
+			"\t\t<input class=\"form-item form-field\" type=\"text\" id=\"first_name\" name=\"first_name\" placeholder=\"Your first name...\">",
+			"",
+			"\t\t<label for=\"lastname\">Last Name</label>",
+			"\t\t<input class=\"form-item form-field\" type=\"text\" id=\"lastname\" name=\"lastname\" placeholder=\"Your last name...\">",
+			"",
+			"\t\t<label for=\"country\">Country</label>",
+			"\t\t<select class=\"form-item form-field\" id=\"country\" name=\"country\">",
+			"\t\t\t\t<option value=\"australia\">Australia</option>",
+			"\t\t\t\t<option value=\"canada\">Canada</option>",
+			"\t\t\t\t<option value=\"uk\">UK</option>",
+			"\t\t</select>",
+			"",
+			"\t\t<label for=\"subject\">Subject</label>",
+			"\t\t<input class=\"form-item form-field\" type=\"text\" id=\"subject\" name=\"subject\" placeholder=\"What is your enquiry about?\">",
+			"",
+			"\t\t<label for=\"message\">Message</label>",
+			"\t\t<textarea class=\"form-item hi-med\" id=\"message\" name=\"message\" placeholder=\"Your enquiry ...\"></textarea>",
+			"",
+			"\t\t<input class=\"form-item btn-primary\" type=\"submit\" value=\"Submit\">",
+			"",
+			"\t</form>",
+			"</div>",
+		],
+		"description": "django Template for Contact Form"
+	}
+
+
+}
+
